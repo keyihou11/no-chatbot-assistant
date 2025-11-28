@@ -1,0 +1,81 @@
+{
+    "name": "no-chatbot",
+    "displayName": "No-Chatbot Programming Assistant",
+    "description": "Event-driven AI assistant that proactively suggests code fixes without chatting",
+    "version": "0.1.0",
+    "publisher": "SiqiChen",
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SiqiChen9/no-chatbot-assistant.git"
+    },
+    "bugs": {
+        "url": "https://github.com/SiqiChen9/no-chatbot-assistant/issues"
+    },
+    "homepage": "https://github.com/SiqiChen9/no-chatbot-assistant#readme",
+    "license": "MIT",
+    "keywords": [
+        "ai",
+        "code-assistant",
+        "pylint",
+        "code-quality",
+        "openai",
+        "claude",
+        "gemini",
+        "python",
+        "code-fixes",
+        "linter"
+    ],
+    "categories": [
+        "Linters",
+        "Programming Languages"
+    ],
+    "activationEvents": [
+        "onLanguage:python"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "no-chatbot.undoLastFix",
+                "title": "No-Chatbot: Undo Last Fix"
+            },
+            {
+                "command": "no-chatbot.analyzeFile",
+                "title": "No-Chatbot: Analyze Current File"
+            }
+        ],
+        "configuration": {
+            "title": "No-Chatbot",
+            "properties": {
+                "no-chatbot.backendUrl": {
+                    "type": "string",
+                    "default": "http://localhost:8000",
+                    "description": "Backend server URL"
+                },
+                "no-chatbot.autoAnalyzeOnSave": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Automatically analyze files on save"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "package": "vsce package"
+    },
+    "devDependencies": {
+        "@types/node": "^18.0.0",
+        "@types/vscode": "^1.80.0",
+        "typescript": "^5.0.0",
+        "@vscode/vsce": "^2.19.0"
+    },
+    "dependencies": {
+        "axios": "^1.6.0"
+    }
+}

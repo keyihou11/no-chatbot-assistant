@@ -1,0 +1,25 @@
+{
+    "folders": [
+        {
+            "name": "🔌 Extension",
+            "path": "extension"
+        },
+        {
+            "name": "🐍 Backend",
+            "path": "backend"
+        },
+        {
+            "name": "📄 Docs",
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "**/.git": true,
+            "**/__pycache__": true,
+            "**/node_modules": true,
+            "**/out": true,
+            "**/*.pyc": true
+        }
+    }
+}
