@@ -413,11 +413,11 @@ npm run package
 - [x] Comprehensive documentation
 - [x] Backend API with FastAPI
 - [x] VS Code extension with TypeScript
+- [x] Package as .vsix for easy installation
+- [x] Publish to VS Code Marketplace
 
 ### 🎯 Near-term (Post-MVP)
 
-- [ ] Package as .vsix for easy installation
-- [ ] Publish to VS Code Marketplace
 - [ ] Add extension analytics and telemetry
 - [ ] Performance optimizations and caching
 - [ ] Support for batch fix application
