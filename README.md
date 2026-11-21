@@ -433,7 +433,3 @@ npm run package
 - [ ] User study and metrics collection for research
 - [ ] Support for additional languages (JavaScript, TypeScript, etc.)
 
-## 📝 License
-
-This is a research project for the Autonomy Technologies MSc program.  
-Licensed under the MIT License - see [LICENSE](LICENSE) file for details.
