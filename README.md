@@ -1,3 +1,7 @@
+This project was collaboratively developed by:
+
+- Siqi Chen — [GitHub](https://github.com/SiqiChen9)
+- Keyi Hou — [GitHub](https://github.com/keyihou11)
 # No-Chatbot Programming Assistant 🤖
 
 ⚠️ **Experimental Preview**: This is an early-stage MVP. Expect rough edges, occasional patch failures, and limited language coverage (currently Python-focused). Use on non-sensitive code, keep a backup or version control handy, and please file issues with repro steps if you hit problems.
